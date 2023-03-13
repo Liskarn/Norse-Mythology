@@ -26,7 +26,7 @@ h1, h2 {
     float: left;
     font-size: 300%;
     margin-left: 30px;
-    margin-top: 20px
+    margin-top: 10px
 }
 
 /* Nav element */
@@ -45,14 +45,11 @@ h1, h2 {
     float: right;
     list-style-type: none;
     margin-right: 30px;
-
-
 }
 
 #nav a {
     text-decoration: none;
     color: inherit;
-
 }
 
 #nav a:hover {
@@ -67,7 +64,7 @@ h1, h2 {
 /* The hero box and img */
 
 #hero-box {
-    height: 650px;
+    height: 200px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -80,8 +77,8 @@ h1, h2 {
 #hero-img {
     height: 400px;
     width: 100%;
-    background: url(../images/futhark.jpg) no-repeat center center;
-
+    background: url(../images/futhark.jpg) no-repeat center;
+    position: inherit;
 }
     
 #hero-text {
@@ -99,7 +96,7 @@ h1, h2 {
     padding-left: 10px;
 
     background-color: rgba( 50, 50, 50, 0.7);
-    bottom: 60px;
+    bottom: 950px;
     right: 550px;
 
     position: absolute;
@@ -121,7 +118,6 @@ h1, h2 {
     color: #fff;
     padding-bottom: 30px;
 }
-
 
 #info-p2 {
     background-color: black;
@@ -149,6 +145,7 @@ h1, h2 {
     padding-bottom: 30px;
 }
 
+/* Inspiration from love running project */
 
 /* footer */
 
@@ -177,6 +174,8 @@ footer {
     padding: 5%;
     color: rgb(82, 77, 77);
 }   
+
+/* inspiration from love running project */
 
 /* media queries */
 
@@ -222,7 +221,7 @@ footer {
 
 }
 
-/* For medium sized screens below 950px and below */
+/* For medium sized screens 950px and below */
 
 @media screen and (max-width : 950px) {
     #nav {
@@ -234,14 +233,9 @@ footer {
     } 
 
     #hero-text {
-        left: 60px;
+        left: 30px;
+        top: 250px;
 
-    }
-
-    #hero-img {
-        width: 400px;
-        height: 400px;
-        object-fit: scale-down;
     }
 }
 
