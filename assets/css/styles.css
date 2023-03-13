@@ -10,38 +10,38 @@
 body {
     font-family: bold inconsolata, sans-serif;
     font-weight: 300;
-    color: #f01010;
-    background-color: rgb(46, 45, 45);
+    color: rgb(82, 77, 77);
 }
 
-/* headings and logo */
+/* Header and Logo */
 
 h1, h2 {
     font-family: ubuntu, sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #f01010; 
+    color: rgb(82, 77, 77); 
 }
 
 #logo {
     float: left;
-    font-size: 350%;
+    font-size: 300%;
     margin-left: 30px;
+    margin-top: 20px
 }
 
-/* navigation links */
+/* Nav element */
 
-#menu {
+#nav {
     font-size: 130%;
     letter-spacing: 4px;
 
 }
 
-#menu, #logo {
+#nav, #logo {
     line-height: 75px;
 }
 
-#menu li {
+#nav li {
     float: right;
     list-style-type: none;
     margin-right: 30px;
@@ -49,25 +49,25 @@ h1, h2 {
 
 }
 
-#menu a {
+#nav a {
     text-decoration: none;
     color: inherit;
 
 }
 
-#menu a:hover {
-    border-bottom: 2px solid #f01010;
+#nav a:hover {
+    border-bottom: 2px solid rgb(82, 77, 77);
 }
 
 .active {
-    border-bottom: 2px solid #f01010;
+    border-bottom: 2px solid rgb(82, 77, 77);
 }
 
 
-/* The hero image */
+/* The hero box and img */
 
-#hero-outer {
-    height: 900px;
+#hero-box {
+    height: 650px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -77,33 +77,89 @@ h1, h2 {
     color: #fff;
 }
 
-#hero-image {
-    height: 1200px;
+#hero-img {
+    height: 400px;
     width: 100%;
-    background: url(../images/hero.image.jpg) no-repeat center center;
-
-    /* animates zoom effect on loading page */
-   animation-name: hero-zoom;
-   animation-duration: 5s;
-   animation-fill-mode: forwards;
+    background: url(../images/futhark.jpg) no-repeat center center;
 
 }
-/* create the level of zoom for hero image */
+    
+#hero-text {
 
-@keyframes hero-zoom {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.1);
-    }
-}  
+    font-size: 130%;
+    font-family: ubuntu, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+
+    width: 300px;
+    height: 150px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba( 50, 50, 50, 0.7);
+    bottom: 60px;
+    right: 550px;
+
+    position: absolute;
+}
+
+
+/* section information */
+
+
+#main-info {
+    background-color: black;
+    color: #fff;
+    padding: 15px 500px;
+    line-height: 1.8;
+}
+
+#main-info h2 {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+
+#info-p2 {
+    background-color: black;
+    color: #fff;
+    padding: 15px 500px;
+    line-height: 1.8;
+}
+
+#info-p2 h2 {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+#info-p3 {
+    background-color: black;
+    color: #fff;
+    padding: 15px 500px;
+    line-height: 1.8;
+}
+
+#info-p3 h2 {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
 
 /* footer */
 
 footer {
     height: 150px;
 
+}
+
+#footer div {
+    text-align: center;
+    padding-top: 40px;
 }
 
 .social-networks {
@@ -119,15 +175,76 @@ footer {
     font-size: 160%;
     margin: 1%;
     padding: 5%;
-    color: #f01010;
-}    
+    color: rgb(82, 77, 77);
+}   
 
-/* section information */
+/* media queries */
 
-#main-info {
-    text-align: center;
-    font-size: 120%;
-    margin-top: 50px;
-    list-style: armenian;
-    border-bottom: 2px solid;
+/* for larger to medium from 1200px and down */
+
+@media screen and (max-width: 1200px) {
+    #hero-text {
+        float: left;
+        clear: both;
+        left: 150px;
+        position: absolute;
+
+    }
+
+    #main-info {
+        padding: 15px 30px;
+        line-height: 1.8;
+    }
+    
+    #main-info h2 {
+        text-align: left;
+        padding-bottom: 30px;
+    }
+    
+    
+    #info-p2 {
+        padding: 15px 30px;
+        line-height: 1.8;
+    }
+    
+    #info-p2 h2 {
+        text-align: left;
+        padding-bottom: 30px;
+    }
+    
+    #info-p3 {
+        padding: 15px 30px;
+        line-height: 1.8;
+    }
+    
+    #info-p3 h2 {
+        text-align: left;
+        padding-bottom: 30px;
+    }
+
 }
+
+/* For medium sized screens below 950px and below */
+
+@media screen and (max-width : 950px) {
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    } 
+
+    #cover-text {
+        left: 0;
+    }
+
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+
+
+
