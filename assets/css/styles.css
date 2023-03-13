@@ -221,9 +221,9 @@ footer {
 
 }
 
-/* For medium sized screens 950px and below */
+/* For medium sized screens 800px and below */
 
-@media screen and (max-width : 950px) {
+@media screen and (max-width : 800px) {
     #nav {
         clear: left;
         float: left;
@@ -233,9 +233,11 @@ footer {
     } 
 
     #hero-text {
-        left: 30px;
-        top: 250px;
+        display: none;
 
+    }
+    #hero-img {
+        display: none;
     }
 }
 
