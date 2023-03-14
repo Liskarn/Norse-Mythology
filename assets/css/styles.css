@@ -80,27 +80,6 @@ h1, h2 {
     background: url(../images/futhark.jpg) no-repeat center;
     position: inherit;
 }
-    
-#hero-text {
-
-    font-size: 130%;
-    font-family: ubuntu, sans-serif;
-    letter-spacing: 3px;
-    color: #fff;
-    text-align: center;
-
-    width: 300px;
-    height: 150px;
-
-    padding-top: 40px;
-    padding-left: 10px;
-
-    background-color: rgba( 50, 50, 50, 0.7);
-    bottom: 950px;
-    right: 550px;
-
-    position: absolute;
-}
 
 
 /* section information */
@@ -182,11 +161,6 @@ footer {
 /* for larger to medium from 1200px and down */
 
 @media screen and (max-width: 1200px) {
-    #hero-text {
-        left: 150px;
-        position: absolute;
-
-    }
 
     #main-info {
         padding: 15px 30px;
@@ -231,13 +205,5 @@ footer {
         margin-bottom: 20px;
         line-height: 25px;
     } 
-
-    #hero-text {
-        display: none;
-
-    }
-    #hero-img {
-        display: none;
-    }
 }
 
